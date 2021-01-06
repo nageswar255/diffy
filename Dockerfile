@@ -24,6 +24,6 @@ CMD [ "-candidate=localhost:9992", \
       "-http.port=:8888", \
       "-rootUrl=localhost:8888", \
       "-summary.email='nageswar_motati@optum.com'", \
-      "-summary.delay='1'" \
+      "-summary.delay=:1" \
 ]
 
