@@ -10,6 +10,7 @@ RUN mv target/scala-2.12 /bin/diffy
 
 # production image
 FROM openjdk:8-jre-alpine
+EXPOSE 3000
 COPY --from=builder /bin/diffy /bin/diffy
 ENTRYPOINT ["java", "-jar", "/bin/diffy/diffy-server.jar"]
 
